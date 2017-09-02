@@ -5,12 +5,13 @@ import java.sql.SQLException;
 
 import org.springframework.stereotype.Repository;
 
+import com.mobdrops.namesa.dao.DAO;
 import com.mobdrops.namesa.dao.IUsuarioDAO;
 import com.mobdrops.namesa.dto.Usuario;
 import com.mobdrops.namesa.exception.ProcedureException;
 
 @Repository
-public class UsuarioDAO implements IUsuarioDAO, Serializable {
+public class UsuarioDAO extends DAO implements IUsuarioDAO, Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
