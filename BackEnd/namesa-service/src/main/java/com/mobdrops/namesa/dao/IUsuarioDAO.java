@@ -1,6 +1,7 @@
 package com.mobdrops.namesa.dao;
 
 import java.sql.SQLException;
+import java.util.List;
 
 import com.mobdrops.namesa.dto.Usuario;
 import com.mobdrops.namesa.exception.ProcedureException;
@@ -38,4 +39,13 @@ public interface IUsuarioDAO {
 	 * @throws ProcedureException
 	 */
 	Usuario consultar(Usuario usuario) throws SQLException, ProcedureException;
+	
+	
+	/**
+	 * consultar Usuario
+	 * @param usuario
+	 * @throws SQLException
+	 * @throws ProcedureException
+	 */
+	List<Usuario> consultarTodos() throws SQLException, ProcedureException;
 }

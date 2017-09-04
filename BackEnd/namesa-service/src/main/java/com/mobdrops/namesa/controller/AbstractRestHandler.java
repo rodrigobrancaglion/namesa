@@ -27,8 +27,6 @@ import com.mobdrops.namesa.exception.ResourceNotFoundException;
  * Esta classe é para ser estendido por todos os "controladores" de recursos
  * REST. Ele contém mapeamento de exceção e outras funcionalidades de REST API
  *
- * @author julio.cesar.maciel
- *
  */
 public abstract class AbstractRestHandler implements ApplicationEventPublisherAware {
 
