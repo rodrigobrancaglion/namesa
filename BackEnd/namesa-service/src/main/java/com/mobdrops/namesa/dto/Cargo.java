@@ -17,7 +17,7 @@ public class Cargo {
 		super();
 		this.id = id;
 		this.grupoCargo = (grupoCargo==null) ? new GrupoCargo(0) : grupoCargo;
-		this.setor = (setor==null) ? new Setor(0) : setor;
+		this.setor = (setor==null) ? new Setor(0, nome) : setor;
 		this.alvo_plr = alvo_plr;
 	}
 	
@@ -41,7 +41,7 @@ public class Cargo {
 		this.grupoCargo = grupoCargo;
 	}
 	public Setor getSetor() {
-		if(setor==null) setor=new Setor(0);
+		if(setor==null) setor=new Setor(0, nome);
 		return setor;
 	}
 	public void setSetor(Setor setor) {

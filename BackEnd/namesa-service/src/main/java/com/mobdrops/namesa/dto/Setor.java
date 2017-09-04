@@ -5,7 +5,7 @@ public class Setor {
 	private Integer id;
 	private String nome;
 	
-	public Setor(Integer id) {
+	public Setor(Integer id, String nome) {
 		super();
 		this.id = id;
 		this.nome = nome;
